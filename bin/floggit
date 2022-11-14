@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+export FLOGGIT_DIR=$(dirname $(dirname "$0"))
+export MYVIMRC="$HOME/.floggit/floggitrc.vim"
+# if [[ -d "$MYVIMRC" ]]; then
+  mkdir -p $(dirname "$MYVIMRC")
+  touch $MYVIMRC
+# fi
+nvim -u "$FLOGGIT_DIR/init_floggit.vim"
