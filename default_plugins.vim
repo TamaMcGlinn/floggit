@@ -62,6 +62,7 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'aacunningham/vim-fuzzy-stash'
+Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
 
 Plug 'TamaMcGlinn/git-worktree.nvim'
