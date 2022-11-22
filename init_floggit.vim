@@ -14,6 +14,8 @@ endif
 
 call plug#end()
 
+execute "source " . expand("$FLOGGIT_DIR/settings.vim")
+
 function! Floggit_Start() abort
   let l:opencmd='-open-cmd=edit'
   call flogmenu#open_git_log(l:opencmd)

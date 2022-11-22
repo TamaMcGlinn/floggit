@@ -65,6 +65,8 @@ Plug 'aacunningham/vim-fuzzy-stash'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
 
+Plug 'TamaMcGlinn/vim-git-essentials'
+Plug 'TamaMcGlinn/vim-floggit-keybindings'
 Plug 'TamaMcGlinn/git-worktree.nvim'
 
 " Flog
@@ -91,3 +93,4 @@ Plug 'roginfarrer/vim-dirvish-dovish'
 Plug 'TamaMcGlinn/vim-bettergf'
 
 Plug 'ryanoasis/vim-devicons'
+Plug 'morhetz/gruvbox'
