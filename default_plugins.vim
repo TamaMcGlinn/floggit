@@ -67,6 +67,8 @@ Plug 'sindrets/diffview.nvim'
 
 Plug 'TamaMcGlinn/vim-git-essentials'
 Plug 'TamaMcGlinn/vim-floggit-keybindings'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'TamaMcGlinn/git-worktree.nvim'
 
 " Flog
