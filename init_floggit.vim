@@ -17,8 +17,13 @@ call plug#end()
 execute "source " . expand("$FLOGGIT_DIR/settings.vim")
 
 function! Floggit_Start() abort
-  let l:opencmd='-open-cmd=edit'
-  call flogmenu#open_git_log(l:opencmd)
+  if !empty(FugitiveGitDir())
+    let l:opencmd='-open-cmd=edit'
+    call flogmenu#open_git_log(l:opencmd)
+  else
+    " TODO fuzzy search for git repo's
+    execute "e ."
+  endif
 endfunction
 
 command! -nargs=0 Floggitstart call Floggit_Start()
