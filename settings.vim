@@ -1,7 +1,5 @@
 silent! colorscheme gruvbox
 
-let g:git_messenger_include_diff = 'current'
-
 let g:which_key_map = {}
 
 " Custom commands start with space
