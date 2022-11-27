@@ -11,6 +11,7 @@ Start `floggit` in a git repository to see a log with commit message headers.
 Default keybindings:
 
 ```
+gq               Quit
 <control-hjkl>   Move between windows
 <enter>          Open commit at cursor
 <space>g         Browse global / current file keybindings
@@ -46,7 +47,13 @@ Install the plugins:
 curl -fLo ~/.floggit/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Then add the floggit/bin directory to your $PATH, and start floggit the first time passing `-c PlugInstall` to install the plugins.
+Then add the floggit/bin directory to your $PATH, and start floggit the first time passing `-c PlugInstall` to install the plugins. For example, if you cloned floggit in your $HOME directory, put this in ~/.bashrc:
+
+```
+export PATH="$PATH:$HOME/floggit/bin"
+```
+
+Then open a new terminal and run `floggit -c PlugInstall`.
 
 Configuration
 -------------
