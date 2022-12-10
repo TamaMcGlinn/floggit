@@ -55,6 +55,11 @@ export PATH="$PATH:$HOME/floggit/bin"
 
 Then open a new terminal and run `floggit -c PlugInstall`.
 
+Updating
+--------
+
+Run `floggit -c PlugUpdate` to update the (neo)vim plugins that make floggit tick.
+
 Configuration
 -------------
 

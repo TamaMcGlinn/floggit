@@ -17,6 +17,7 @@ call plug#end()
 execute "source " . expand("$FLOGGIT_DIR/settings.vim")
 
 function! Floggit_Start() abort
+  execute ":only"
   if !empty(FugitiveGitDir())
     let l:opencmd='-open-cmd=edit'
     call flogmenu#open_git_log(l:opencmd)
