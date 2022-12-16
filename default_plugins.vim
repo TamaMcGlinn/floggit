@@ -74,6 +74,7 @@ Plug 'TamaMcGlinn/git-worktree.nvim'
 " Flog
 Plug 'TamaMcGlinn/vim-fugitive'
 Plug 'rbong/vim-flog'
+Plug 'TamaMcGlinn/vim-autoflog'
 
 " flog extensions
 Plug 'skywind3000/vim-quickui'
