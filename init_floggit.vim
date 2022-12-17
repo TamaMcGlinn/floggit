@@ -20,7 +20,13 @@ function! Floggit_Start() abort
   execute ":only"
   if !empty(FugitiveGitDir())
     let l:opencmd='-open-cmd=edit'
-    call flogmenu#open_git_log(l:opencmd)
+    if exists('*autoflog#open_flog')
+      call autoflog#open_flog()
+    elseif exists('*flogmenu#open_git_log')
+      call flogmenu#open_git_log(l:opencmd)
+    else
+      execute ':Flog -all ' . l:opencmd
+    endif
   else
     " TODO fuzzy search for git repo's
     execute "e ."
