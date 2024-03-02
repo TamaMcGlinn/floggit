@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+rm -rf ~/.local/floggit/ ~/.floggit/ ~/.local/bin/floggit

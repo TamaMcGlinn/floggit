@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export FLOGGIT_DIR=$(dirname $(dirname "$0"))
+export FLOGGIT_DIR="~/.local/floggit/"
 export MYVIMRC="$HOME/.floggit/floggitrc.vim"
 if [ ! -f "$MYVIMRC" ]; then
   mkdir -p $(dirname "$MYVIMRC")

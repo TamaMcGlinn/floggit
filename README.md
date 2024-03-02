@@ -29,31 +29,48 @@ Under the hood, this is just a script that calls NeoVim, passing along [its own 
 Installation
 ------------
 
-Install the prerequisites:
+## Prerequisites:
+
+You need [NeoVim](https://github.com/neovim/neovim/blob/master/INSTALL.md) installed, and curl and git:
 
 ```
-sudo apt install nvim curl git
+sudo apt install curl git
 ```
 
-Download floggit:
+## Install floggit
+
+There's an install script for Ubuntu:
+
+```
+curl -o- https://raw.githubusercontent.com/TamaMcGlinn/floggit/master/install_floggit | bash -x
+```
+
+Otherwise, do the following steps:
+
+### Download floggit:
 
 ```
 git clone git@github.com:TamaMcGlinn/floggit
 ```
 
-Install the plugins:
+### Install the plugin manager:
 
 ```
 curl -fLo ~/.floggit/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Then add the floggit/bin directory to your $PATH, and start floggit the first time passing `-c PlugInstall` to install the plugins. For example, if you cloned floggit in your $HOME directory, put this in `~/.bashrc`:
+### Add to PATH
+
+Then add the floggit/bin directory to your $PATH, and . For example, if you cloned floggit in your $HOME directory, put this in `~/.bashrc`:
 
 ```
 export PATH="$PATH:$HOME/floggit/bin"
 ```
 
-Then open a new terminal and run `floggit -c PlugInstall`.
+### Install the plugins
+
+You need to run `floggit -c PlugInstall` the first time,
+to install the vim plugins. After that you can just do `floggit`.
 
 Updating
 --------

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-sudo apt install nvim curl git
 curl -fLo ~/.floggit/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+git clone https://github.com/TamaMcGlinn/floggit.git ~/.local/floggit
+ln -s ~/.local/floggit/bin/floggit ~/.local/bin/floggit
+~/.local/bin/floggit -c PlugInstall
